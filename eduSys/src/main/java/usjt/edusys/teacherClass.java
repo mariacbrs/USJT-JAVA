@@ -5,14 +5,21 @@ import javax.swing.JOptionPane;
 
 public class teacherClass {
     String tName;
-    private String tPass;
+    int tAge;
     String tEmail;
-    int age;
-    
-    
+    private String tPass;
+   
     
 // METHODS:    
 
+   public void identifyTeacher(){
+        JOptionPane.showMessageDialog(null, "Welcome teacher!");
+        tName = JOptionPane.showInputDialog(null, "Your name:");
+        tAge = Integer.parseInt(JOptionPane.showInputDialog(null, "Your age:"));
+        tEmail = JOptionPane.showInputDialog(null, "Your email:");
+        tPass = JOptionPane.showInputDialog(null, "Create a password:");
+        
+   } 
    public void addGrades(){
    //Method functionalities:  
         // - Launch Grades -> If the user is a teacher, allows the client to launch the students grade

@@ -18,10 +18,9 @@ public class Index {
      
     //                                             STUDENT BLOCK START   
       if(user.equalsIgnoreCase("S")){
-         stuClass stu = new stuClass();
-          
-         stu.sName =  JOptionPane.showInputDialog(null, "Insert your name:"); 
-         JOptionPane.showMessageDialog(null, "Welcome student " + stu.sName + "!");
+        stuClass stu = new stuClass(); 
+        stu.identifyStu();
+     
  
          
     //                                             STUDENT BLOCK END 
@@ -30,9 +29,7 @@ public class Index {
       }else if(user.equalsIgnoreCase("T")){
           teacherClass teacher = new teacherClass();
           
-          teacher.tName = JOptionPane.showInputDialog(null, "Insert your name:");
-          JOptionPane.showMessageDialog(null, "Welcome teacher " + teacher.tName + "!");
-          
+          teacher.identifyTeacher();
           teacher.addGrades();
          
           
