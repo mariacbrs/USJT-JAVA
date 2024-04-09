@@ -1,2 +1,3 @@
 # USJT-JAVA
-Practice codes made using Java 
+Codes I made as a practice during and after classes at University São Judas Tadeu. 
+
