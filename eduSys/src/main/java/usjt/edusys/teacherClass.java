@@ -43,58 +43,43 @@ public class teacherClass {
           }
    }
 
-    /**
-     * @return the tName
-     */
+// GET AND SET VAR:
+   
     private String gettName() {
         return tName;
     }
 
-    /**
-     * @param tName the tName to set
-     */
+
     private void settName(String tName) {
         this.tName = tName;
     }
 
-    /**
-     * @return the tAge
-     */
+  
     private int gettAge() {
         return tAge;
     }
 
-    /**
-     * @param tAge the tAge to set
-     */
+ 
     private void settAge(int tAge) {
         this.tAge = tAge;
     }
 
-    /**
-     * @return the tEmail
-     */
+ 
     private String gettEmail() {
         return tEmail;
     }
 
-    /**
-     * @param tEmail the tEmail to set
-     */
+ 
     private void settEmail(String tEmail) {
         this.tEmail = tEmail;
     }
 
-    /**
-     * @return the tPass
-     */
+ 
     private String gettPass() {
         return tPass;
     }
 
-    /**
-     * @param tPass the tPass to set
-     */
+ 
     private void settPass(String tPass) {
         this.tPass = tPass;
     }
