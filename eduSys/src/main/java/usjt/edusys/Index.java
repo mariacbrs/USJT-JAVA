@@ -19,7 +19,7 @@ public class Index {
     //                                             STUDENT BLOCK START   
       if(user.equalsIgnoreCase("S")){
         stuClass stu = new stuClass(); 
-        stu.identifyStu();
+        stu.IdentifyUser();
      
  
          
@@ -29,7 +29,7 @@ public class Index {
       }else if(user.equalsIgnoreCase("T")){
           teacherClass teacher = new teacherClass();
           
-          teacher.identifyTeacher();
+          teacher.IdentifyUser();
           teacher.addGrades();
          
           

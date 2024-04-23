@@ -3,24 +3,13 @@ package usjt.edusys;
 
 import javax.swing.JOptionPane;
 
-public class teacherClass {
-    private String tName;
-    private int tAge;
-    private String tEmail;
-    private String tPass;
+public class teacherClass extends userClass{
+
+//alt+insert to create constructor
    
     
 // METHODS:    
 
-   public void identifyTeacher(){
-        settName(JOptionPane.showInputDialog(null, "Your name:"));
-        JOptionPane.showMessageDialog(null, "Welcome teacher " + gettName() + "!");
-        
-        settAge(Integer.parseInt(JOptionPane.showInputDialog(null, "Your age:")));
-        settEmail(JOptionPane.showInputDialog(null, "Your email:"));
-        settPass(JOptionPane.showInputDialog(null, "Create a password:"));
-        
-   } 
    public void addGrades(){
    //Method functionalities:  
         // - Launch Grades -> If the user is a teacher, allows the client to launch the students grade
@@ -42,45 +31,4 @@ public class teacherClass {
              
           }
    }
-
-// GET AND SET VAR:
-   
-    private String gettName() {
-        return tName;
-    }
-
-
-    private void settName(String tName) {
-        this.tName = tName;
-    }
-
-  
-    private int gettAge() {
-        return tAge;
-    }
-
- 
-    private void settAge(int tAge) {
-        this.tAge = tAge;
-    }
-
- 
-    private String gettEmail() {
-        return tEmail;
-    }
-
- 
-    private void settEmail(String tEmail) {
-        this.tEmail = tEmail;
-    }
-
- 
-    private String gettPass() {
-        return tPass;
-    }
-
- 
-    private void settPass(String tPass) {
-        this.tPass = tPass;
-    }
 }
