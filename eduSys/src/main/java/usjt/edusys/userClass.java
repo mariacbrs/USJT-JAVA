@@ -4,7 +4,7 @@ package usjt.edusys;
 import javax.swing.JOptionPane;
 
 public class userClass {
-     private String uName;
+    private String uName;
     private int uAge;
     private String uEmail;
     private String uPass;
