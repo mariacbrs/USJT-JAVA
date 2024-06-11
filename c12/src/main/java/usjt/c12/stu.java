@@ -29,6 +29,24 @@ public class stu {
          e.printStackTrace();
         }
     }
+    
+    public void updateStu() {
+        String sql = "UPDATE student SET name_stu = ?, age_stu = ?, ra_stu = ?, email_stu = ?, phone_stu = ? WHERE id_stu = ?";
+         
+        ConnectionFactory nConnection = new ConnectionFactory();
+        try(Connection c= nConnection.obtemConexao()){
+          PreparedStatement ps = c.prepareStatement(sql);
+          ps.setString(1,getName_stu());
+          ps.setInt(2,getAge_stu());
+          ps.setInt(3,getRa_stu());
+          ps.setString(4,getEmail_stu());
+          ps.setString(5,getPhone_stu());
+          ps.setInt(6,getId_stu());
+          ps.execute();
+        }catch(Exception e){
+         e.printStackTrace();
+        }
+    }
 
    
     private int getId_stu() {
@@ -36,7 +54,7 @@ public class stu {
     }
 
 
-    private void setId_stu(int id_stu) {
+    void setId_stu(int id_stu) {
         this.id_stu = id_stu;
     }
 
